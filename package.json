@@ -1,0 +1,59 @@
+{
+  "name": "aws-amplify-react-yarn2-repro",
+  "packageManager": "yarn@3.2.0-rc.9",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
+    "@types/testing-library__jest-dom": "^5.14.2"
+  },
+  "dependencies": {
+    "@craco/craco": "^6.4.3",
+    "aws-amplify": "^4.3.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "typescript": "^4.4.2",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.[jt]s?(x)",
+      "<rootDir>/src/**/?(*.)+(spec|test).[jt]s?(x)"
+    ],
+    "transformIgnorePatterns": [
+      ".yarn/"
+    ],
+    "moduleNameMapper": {
+      "@src/(.*)": "<rootDir>/src/$1"
+    }
+  }
+}
